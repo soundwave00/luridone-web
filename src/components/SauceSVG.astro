@@ -1,0 +1,19 @@
+---
+interface Props {
+  id: string;
+  sauceStyle: string;
+  viewBox: string;
+  d: string;
+}
+const { id, sauceStyle, viewBox, d } = Astro.props;
+---
+<svg
+  class="sauce"
+  id={id}
+  style={sauceStyle}
+  viewBox={viewBox}
+  preserveAspectRatio="none"
+  aria-hidden="true"
+>
+  <path d={d} />
+</svg>
