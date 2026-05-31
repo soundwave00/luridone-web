@@ -1,0 +1,58 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/sections.css';
+
+import Hero from '../components/Hero.astro';
+import Marquee from '../components/Marquee.astro';
+import Manifesto from '../components/Manifesto.astro';
+import Features from '../components/Features.astro';
+import ProblemSolution from '../components/ProblemSolution.astro';
+import Stats from '../components/Stats.astro';
+import FinalCTA from '../components/FinalCTA.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LURIDONE — La guida ai posti luridi più buoni di Milano</title>
+    <meta name="description" content="Mappa, recensioni vere e community dei baracchini, trattorie e posti luridi di Milano. Se non è su Google, è Luridone." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="LURIDONE — Milano Lurida e bellissima" />
+    <meta property="og:description" content="La guida ai posti luridi più buoni di Milano." />
+    <meta property="og:image" content="https://luridone.it/assets/og-image.jpg" />
+    <meta property="og:url" content="https://luridone.it" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://luridone.it" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Hero />
+    <Marquee />
+    <Manifesto />
+    <Features />
+    <ProblemSolution />
+    <Stats />
+    <FinalCTA />
+    <Footer />
+
+    <script>
+      import '../scripts/main.ts';
+    </script>
+  </body>
+</html>
