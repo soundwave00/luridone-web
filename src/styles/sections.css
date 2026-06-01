@@ -517,6 +517,7 @@
   margin: 56px auto 0;
   display: block;
   filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.2));
+  mix-blend-mode: multiply;
 }
 
 /* ============ FOOTER ============ */
