@@ -192,6 +192,7 @@
 
 .marquee-track {
   display: flex;
+  align-items: center;
   width: max-content;
   animation: scrollx 26s linear infinite;
 }
