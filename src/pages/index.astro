@@ -28,10 +28,17 @@ import Footer from '../components/Footer.astro';
     <meta property="og:image" content="https://luridone.it/assets/og-image.jpg" />
     <meta property="og:url" content="https://luridone.it" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="LURIDONE" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LURIDONE — Milano Lurida e bellissima" />
+    <meta name="twitter:description" content="La guida ai posti luridi più buoni di Milano." />
+    <meta name="twitter:image" content="https://luridone.it/assets/og-image.jpg" />
 
     <link rel="canonical" href="https://luridone.it" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#7B1010" />
 
     <!-- Google Fonts — async load to avoid render blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,6 +46,7 @@ import Footer from '../components/Footer.astro';
     <link
       rel="preload"
       as="style"
+      crossorigin="anonymous"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       onload="this.onload=null;this.rel='stylesheet'"
     />
