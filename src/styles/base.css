@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   background: var(--cream);
   color: var(--ink);
   overflow-x: hidden;
@@ -41,7 +41,7 @@ h1, h2, h3, .display {
   display: inline-flex;
   align-items: center;
   gap: .6em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
