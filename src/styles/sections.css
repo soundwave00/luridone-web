@@ -473,7 +473,7 @@
 }
 
 .finalcta .mascot-big {
-  width: clamp(150px, 22vw, 240px);
+  width: clamp(320px, 55vw, 640px);
   height: auto;
   margin: 56px auto 0;
   display: block;
