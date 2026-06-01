@@ -1,9 +1,7 @@
 /* Design tokens — modifica qui per aggiornare colori e spacing globali */
 :root {
   --crimson:   #7B1010;
-  --crimson-2: #9A1818;
   --gold:      #C9A217;
-  --gold-soft: #E0BE2E;
   --cream:     #EDE8D0;
   --cream-2:   #F4F0DE;
   --white:     #FFFFFF;

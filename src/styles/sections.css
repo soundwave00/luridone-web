@@ -1,6 +1,7 @@
 /* ============ HERO ============ */
 .hero {
   position: relative;
+  min-height: 100vh;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -536,6 +537,18 @@ footer {
 }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .grid2 {
+    gap: 18px;
+  }
+  .card {
+    padding: 30px 24px;
+  }
+  .stat-grid {
+    gap: 36px;
+  }
+}
+
 @media (max-width: 1024px) {
   .ps-grid {
     grid-template-columns: 1fr;
