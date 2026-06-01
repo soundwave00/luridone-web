@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "https://www.luridone.it/:path*",
-      "destination": "https://luridone.it/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
