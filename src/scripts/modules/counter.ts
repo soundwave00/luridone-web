@@ -1,5 +1,6 @@
 function countUp(el: HTMLElement, reduce: boolean): void {
   const target = Number(el.dataset['target']);
+  if (!Number.isFinite(target)) return;
   const suffix = el.dataset['suffix'] ?? '';
 
   if (reduce) {

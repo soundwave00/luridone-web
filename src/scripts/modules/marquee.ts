@@ -4,11 +4,25 @@ const phrases: readonly string[] = [
   'Milano Lurida non si scusa',
 ];
 
+function buildUnit(): DocumentFragment {
+  const frag = document.createDocumentFragment();
+  phrases.forEach((p) => {
+    const text = document.createElement('span');
+    text.textContent = p;
+    frag.appendChild(text);
+
+    const sep = document.createElement('span');
+    sep.className = 'sep';
+    sep.textContent = '·';
+    frag.appendChild(sep);
+  });
+  return frag;
+}
+
 export function initMarquee(): void {
   const track = document.getElementById('marqueeTrack');
   if (!track) return;
 
-  // Build one unit of phrases, duplicate for seamless -50% translateX loop
-  const unit = phrases.map((p) => `<span>${p}</span><span class="sep">·</span>`).join('');
-  track.innerHTML = unit + unit;
+  track.appendChild(buildUnit());
+  track.appendChild(buildUnit());
 }

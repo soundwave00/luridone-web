@@ -3,25 +3,27 @@ export function initSauce(reduce: boolean): void {
     const path = svg.querySelector<SVGPathElement>('path');
     if (!path) return;
 
-    const len = path.getTotalLength();
-    svg.style.setProperty('--len', String(len));
+    requestAnimationFrame(() => {
+      const len = path.getTotalLength();
+      svg.style.setProperty('--len', String(len));
 
-    if (reduce) {
-      svg.classList.add('drawn');
-      return;
-    }
+      if (reduce) {
+        svg.classList.add('drawn');
+        return;
+      }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            svg.classList.add('drawn');
-            observer.unobserve(svg);
-          }
-        });
-      },
-      { threshold: 0.25 }
-    );
-    observer.observe(svg);
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              svg.classList.add('drawn');
+              observer.unobserve(svg);
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+      observer.observe(svg);
+    });
   });
 }
