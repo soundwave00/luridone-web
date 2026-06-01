@@ -6,7 +6,7 @@ import { initCounters } from './modules/counter.ts';
 
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-initHeroVideo();
+initHeroVideo(reduce);
 initMarquee();
 initReveal(reduce);
 initSauce(reduce);

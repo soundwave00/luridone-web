@@ -1,6 +1,11 @@
-export function initHeroVideo(): void {
+export function initHeroVideo(reduce: boolean): void {
   const video = document.querySelector<HTMLVideoElement>('.hero video');
   if (!video) return;
+
+  if (reduce) {
+    video.pause();
+    return;
+  }
 
   const tryPlay = (): void => {
     video.play()?.catch(() => {});
